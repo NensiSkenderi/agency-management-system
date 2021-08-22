@@ -1,4 +1,4 @@
-# Agency management system for its employees
+# Agency management system for storing client data
 
 ## About The Project
 
