@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainContainer" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="824.0" styleClass="mainContainer" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.view_data_inactive_controller">
+   <children>
+      <JFXTextField fx:id="txtAgencyName" labelFloat="true" layoutX="55.0" layoutY="78.0" prefHeight="30.0" prefWidth="210.0" promptText="*Agency Name" />
+      <JFXTextField fx:id="txtPhone" labelFloat="true" layoutX="55.0" layoutY="273.0" prefHeight="30.0" prefWidth="210.0" promptText="Phone" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="USER" layoutX="16.0" layoutY="104.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <Pane fx:id="upperPane" layoutX="-1.0" layoutY="-1.0" maxWidth="1.7976931348623157E308" prefHeight="53.0" prefWidth="766.0" styleClass="pinkColor" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="-2.0">
+         <children>
+            <Label fx:id="action" alignment="CENTER" layoutY="10.0" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="824.0" text="View Agency Data" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="SORT_NUMERIC_ASC" layoutX="16.0" layoutY="295.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXTextField fx:id="txtFax" focusColor="#30b2a1" labelFloat="true" layoutX="56.0" layoutY="345.0" prefHeight="30.0" prefWidth="210.0" promptText="Fax" unFocusColor="#bfbfbf">
+         <font>
+            <Font name="Roboto Light" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXTextField>
+      <JFXTextField fx:id="txtNpi" focusColor="#30b2a1" labelFloat="true" layoutX="54.0" layoutY="429.0" prefHeight="30.0" prefWidth="210.0" promptText="Npi" unFocusColor="#bfbfbf">
+         <font>
+            <Font name="Roboto Light" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXTextField>
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="SORT_NUMERIC_ASC" layoutX="17.0" layoutY="370.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="SORT_NUMERIC_ASC" layoutX="17.0" layoutY="454.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXTextArea fx:id="txtAddress" labelFloat="true" layoutX="55.0" layoutY="157.0" prefHeight="68.0" prefWidth="210.0" promptText="*Address" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="USER" layoutX="16.0" layoutY="175.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXTextField fx:id="txtPtan" focusColor="#30b2a1" labelFloat="true" layoutX="53.0" layoutY="517.0" prefHeight="30.0" prefWidth="210.0" promptText="Ptan" unFocusColor="#bfbfbf">
+         <font>
+            <Font name="Roboto Light" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXTextField>
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="SORT_NUMERIC_ASC" layoutX="16.0" layoutY="541.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="SORT_NUMERIC_ASC" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="SORT_NUMERIC_ASC" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="SORT_NUMERIC_ASC" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="SORT_NUMERIC_ASC" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXTextField fx:id="txtTaxID" labelFloat="true" layoutX="330.0" layoutY="78.0" prefHeight="30.0" prefWidth="210.0" promptText="Tax ID" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="SORT_NUMERIC_ASC" layoutX="291.0" layoutY="104.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXTextField fx:id="txtPrimaryBiller" labelFloat="true" layoutX="330.0" layoutY="152.0" prefHeight="30.0" prefWidth="210.0" promptText="*Primary Biller" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="SORT_NUMERIC_ASC" layoutX="291.0" layoutY="178.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXTextField fx:id="txtPrimaryAccountant" labelFloat="true" layoutX="330.0" layoutY="241.0" prefHeight="30.0" prefWidth="210.0" promptText="*Primary Accountant" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="SORT_NUMERIC_ASC" layoutX="291.0" layoutY="267.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXTextField fx:id="txtSecondaryBiller" labelFloat="true" layoutX="330.0" layoutY="327.0" prefHeight="30.0" prefWidth="210.0" promptText="Secondary Biller" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="SORT_NUMERIC_ASC" layoutX="291.0" layoutY="355.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXTextField fx:id="txtSecondaryAccountant" labelFloat="true" layoutX="331.0" layoutY="408.0" prefHeight="30.0" prefWidth="210.0" promptText="Secondary Accountant" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="SORT_NUMERIC_ASC" layoutX="292.0" layoutY="436.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXTextArea fx:id="txtComments" labelFloat="true" layoutX="331.0" layoutY="491.0" prefHeight="68.0" prefWidth="210.0" promptText="Comments" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="USER" layoutX="292.0" layoutY="511.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXTextField fx:id="txtDDELogin" labelFloat="true" layoutX="598.0" layoutY="84.0" prefHeight="30.0" prefWidth="210.0" promptText="DDE Login" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="SORT_NUMERIC_ASC" layoutX="559.0" layoutY="110.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXTextField fx:id="txtDDEPassword" labelFloat="true" layoutX="598.0" layoutY="158.0" prefHeight="30.0" prefWidth="210.0" promptText="DDE Password" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="SORT_NUMERIC_ASC" layoutX="559.0" layoutY="184.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXTextField fx:id="txtSoftwareLogin" labelFloat="true" layoutX="598.0" layoutY="247.0" prefHeight="30.0" prefWidth="210.0" promptText="Software Login" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="SORT_NUMERIC_ASC" layoutX="559.0" layoutY="273.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXTextField fx:id="txtSoftwarePassword" labelFloat="true" layoutX="598.0" layoutY="333.0" prefHeight="30.0" prefWidth="210.0" promptText="Software Password" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="SORT_NUMERIC_ASC" layoutX="559.0" layoutY="361.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+
+/*****************************************/
+/********** JFX TEXT FIELD CSS ***********/
+/*****************************************/
+
+.jfx-text-field
+{
+    -jfx-focus-color: #1794B2;
+}
+
+.text-field
+{
+    -fx-prompt-text-fill: #1794B2;
+    -fx-text-fill: #1794B2;
+}
+
+.text-field .input-line
+{
+    -fx-background-color: #1794B2;
+}
+
+.btnConfirm {
+    -fx-background-color :  #1794B2;
+    -fx-text-fill : white;
+}
+
+.btn {
+	-fx-cursor: hand;
+    -fx-content-display: right;
+    -fx-background-radius : 30;
+    -fx-border-radius: 30;
+}
+
+.btnConfirm:hover {
+	-fx-background-color:  #1794B2;
+	-fx-text-fill : white;
+}
+
+.btnLogout:hover {
+	-fx-border-width:  2px;
+}
+
+
+.btnLogout {
+    -fx-border-color :   #1794B2;
+    -fx-background-color :  white;
+    -fx-text-fill : #1794B2;
+}
+
+.btnBlurred {
+	-fx-pref-width: 126px;
+    -fx-pref-height: 35px;
+    -fx-min-width: -fx-pref-width;
+    -fx-max-width: -fx-pref-width;
+    -fx-min-height: -fx-pref-height;
+    -fx-max-height: -fx-pref-height;
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="400.0" styleClass="mainContainer" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.add_client_comm_notes_controller">
+   <children>
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="BOOKMARK_ALT" layoutX="50.0" layoutY="163.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXTextField fx:id="txtClientCommNotes" focusColor="#30b2a1" labelFloat="true" layoutX="83.0" layoutY="132.0" prefHeight="44.0" prefWidth="258.0" promptText="Client Communication Notes" unFocusColor="#bfbfbf">
+         <font>
+            <Font name="Roboto Light" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXTextField>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="69.0" layoutY="488.0" onAction="#save" prefHeight="47.0" prefWidth="113.0" style="-fx-background-color: #1794B2; -fx-background-position: 15%;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="Roboto Light" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="buttonSize" />
+            <String fx:value="save-icon" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton fx:id="btnCancel" layoutX="212.0" layoutY="488.0" onAction="#cancel" prefHeight="47.0" prefWidth="317.0" style="-fx-border-color: #1794B2;" text="Cancel" textFill="#1794B2">
+         <font>
+            <Font name="Roboto Light" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="buttonSize" />
+            <String fx:value="button_exit" />
+         </styleClass>
+      </JFXButton>
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="STICKY_NOTE_ALT" layoutX="50.0" layoutY="287.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <Label fx:id="lblError" layoutX="51.0" layoutY="411.0" prefHeight="36.0" prefWidth="306.0" styleClass="lblError" textFill="#1794B2" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="70.0" prefWidth="400.0" style="-fx-background-color: #1794B2;">
+         <children>
+            <Label alignment="CENTER" layoutY="17.0" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="400.0" text="Add/Edit Client Communication Notes" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXComboBox fx:id="cmbAgency" focusColor="#1794B2" layoutX="83.0" layoutY="253.0" prefHeight="31.0" prefWidth="258.0" promptText="*-Choose Agency-" style="-fx-font-size: 18px;" unFocusColor="#1794B2" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="670.0" prefWidth="896.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.view_notes_controller">
+   <center>
+      <AnchorPane fx:id="mainContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="mainContainer" stylesheets="@../css/login.css">
+         <children>
+            <FontAwesomeIconView fill="#bfbfbf" glyphName="STICKY_NOTE_ALT" layoutX="20.0" layoutY="159.0" size="23" styleClass="icons" wrappingWidth="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="150.0" />
+            <Label fx:id="lblError" layoutX="64.0" layoutY="316.0" prefHeight="36.0" prefWidth="295.0" styleClass="lblError" textFill="#1794B2" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" layoutY="1.0" style="-fx-background-color: #1794B2;" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="-1.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="55.0" text="View Notes" textAlignment="CENTER" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Roboto Light" size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtHidden" focusColor="#30b2a1" prefHeight="44.0" prefWidth="119.0" unFocusColor="#bfbfbf" visible="false">
+                     <font>
+                        <Font name="Roboto Light" size="18.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <JFXTextArea fx:id="txtAreaInstructions" layoutX="52.0" layoutY="139.0" prefHeight="451.0" prefWidth="794.0" promptText="Notes" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="150.0" />
+            <HBox alignment="CENTER" layoutX="313.0" layoutY="598.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <JFXButton fx:id="btnSave" buttonType="RAISED" onAction="#save" prefHeight="47.0" prefWidth="113.0" style="-fx-background-color: #1794B2; -fx-background-position: 15%;" text="Save" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Light" size="16.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="buttonSize" />
+                        <String fx:value="save-icon" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton fx:id="btnCancel" onAction="#cancel" prefHeight="47.0" prefWidth="317.0" style="-fx-border-color: #1794B2;" text="Cancel" textFill="#1794B2">
+                     <font>
+                        <Font name="Roboto Light" size="16.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="buttonSize" />
+                        <String fx:value="button_exit" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <FontAwesomeIconView fill="#bfbfbf" glyphName="BOOKMARK_ALT" layoutX="20.0" layoutY="101.0" size="25" styleClass="icons" wrappingWidth="20.0" AnchorPane.topAnchor="80.0" />
+            <JFXTextField fx:id="txtInsuranceName" focusColor="#30b2a1" layoutX="52.0" layoutY="69.0" prefHeight="44.0" prefWidth="801.0" promptText="Insurance Name" unFocusColor="#bfbfbf" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="42.0" AnchorPane.topAnchor="68.0">
+               <font>
+                  <Font name="Roboto Light" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

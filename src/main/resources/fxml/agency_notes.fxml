@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="root" prefHeight="1090.0" prefWidth="721.0" style="-fx-background-color: #F2F2FA;" stylesheets="@../css/users.css" type="VBox" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox maxHeight="1.7976931348623157E308" prefHeight="900.0" prefWidth="799.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+               <children>
+                  <AnchorPane prefHeight="93.0" prefWidth="604.0" style="-fx-background-color: white;">
+                     <children>
+                        <HBox layoutX="6.0" layoutY="26.0" prefHeight="38.0" prefWidth="737.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="16.0">
+                           <children>
+                              <HBox maxWidth="-Infinity" prefHeight="38.0" prefWidth="361.0" HBox.hgrow="NEVER">
+                                 <children>
+                                    <JFXButton fx:id="btnAddNote" buttonType="RAISED" layoutX="35.0" layoutY="10.0" maxWidth="-Infinity" onAction="#save" prefHeight="38.0" prefWidth="219.0" text="Save" textFill="WHITE">
+                                       <font>
+                                          <Font name="Roboto Regular" size="15.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="property-icons" />
+                                          <String fx:value="edit-icon" />
+                                       </styleClass>
+                                    </JFXButton>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </HBox>
+                              <Label fx:id="clientDate" alignment="CENTER_RIGHT" contentDisplay="RIGHT" maxWidth="1.7976931348623157E308" textFill="#1794b2" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="System Italic" size="20.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </AnchorPane>
+                  <HBox VBox.vgrow="NEVER">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label fx:id="clientName" maxWidth="1.7976931348623157E308" textFill="#ff1212" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <JFXTextArea fx:id="txtAreaNotes" focusColor="#1794b2" promptText="-Type here the notes for this client-" style="-fx-background-color: white;" unFocusColor="#1794b2" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="30.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" left="5.0" right="10.0" top="10.0" />
+                     </padding>
+                  </JFXTextArea>
+               </children>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</fx:root>

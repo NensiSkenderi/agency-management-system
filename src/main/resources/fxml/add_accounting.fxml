@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="752.0" prefWidth="1003.0" styleClass="mainContainer" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.accounting_instructions_controller">
+   <children>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="375.0" layoutY="687.0" onAction="#save" prefHeight="47.0" prefWidth="113.0" style="-fx-background-color: #1794B2; -fx-background-position: 15%;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="Roboto Light" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="buttonSize" />
+            <String fx:value="save-icon" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton fx:id="btnCancel" layoutX="518.0" layoutY="687.0" onAction="#cancel" prefHeight="47.0" prefWidth="317.0" style="-fx-border-color: #1794B2;" text="Cancel" textFill="#1794B2">
+         <font>
+            <Font name="Roboto Light" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="buttonSize" />
+            <String fx:value="button_exit" />
+         </styleClass>
+      </JFXButton>
+      <Label fx:id="lblError" layoutX="36.0" layoutY="664.0" prefHeight="36.0" prefWidth="306.0" styleClass="lblError" textFill="#1794B2" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="70.0" prefWidth="400.0" style="-fx-background-color: #1794B2;" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-2.0">
+         <children>
+            <Label alignment="CENTER" layoutY="17.0" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="957.0" text="Accounting" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="107.0" layoutY="95.0" prefHeight="21.0" prefWidth="131.0" text="Instructions" textFill="#1794B2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="BOOKMARK_ALT" layoutX="369.0" layoutY="178.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXTextField fx:id="txtPreparer1" focusColor="#30b2a1" labelFloat="true" layoutX="402.0" layoutY="147.0" prefHeight="44.0" prefWidth="219.0" promptText="Preparer (Add name)" unFocusColor="#bfbfbf">
+         <font>
+            <Font name="Roboto Light" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXTextField>
+      <Label layoutX="453.0" layoutY="95.0" prefHeight="21.0" prefWidth="131.0" text="Tax Return" textFill="#1794B2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="BOOKMARK_ALT" layoutX="369.0" layoutY="268.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <Separator layoutX="328.0" layoutY="96.0" orientation="VERTICAL" prefHeight="556.0" prefWidth="0.0" />
+      <Label layoutX="758.0" layoutY="95.0" prefHeight="21.0" prefWidth="131.0" text="Cost Report " textFill="#1794B2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="663.0" layoutY="96.0" orientation="VERTICAL" prefHeight="550.0" prefWidth="0.0" />
+      <JFXDatePicker fx:id="dueDate1" defaultColor="#1794B2" editable="false" layoutX="402.0" layoutY="242.0" promptText="Due Date" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="BOOKMARK_ALT" layoutX="369.0" layoutY="361.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXDatePicker fx:id="dateCompleted1" defaultColor="#1794B2" editable="false" layoutX="402.0" layoutY="335.0" promptText="Date Completed" />
+      <JFXCheckBox fx:id="sent1" checkedColor="#1794B2" layoutX="370.0" layoutY="428.0" prefHeight="27.0" prefWidth="274.0" text="Sent to client (Yes / No)" textFill="GREY" unCheckedColor="#1794B2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXTextArea fx:id="txtAdditionalInfo1" layoutX="401.0" layoutY="515.0" prefHeight="117.0" prefWidth="230.0" promptText="Additional Info" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="BOOKMARK_ALT" layoutX="369.0" layoutY="536.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="BOOKMARK_ALT" layoutX="700.0" layoutY="176.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXTextField fx:id="txtPreparer2" focusColor="#30b2a1" labelFloat="true" layoutX="733.0" layoutY="145.0" prefHeight="44.0" prefWidth="219.0" promptText="Preparer (Add name)" unFocusColor="#bfbfbf">
+         <font>
+            <Font name="Roboto Light" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXTextField>
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="BOOKMARK_ALT" layoutX="700.0" layoutY="266.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXDatePicker fx:id="dueDate2" defaultColor="#1794B2" editable="false" layoutX="733.0" layoutY="240.0" promptText="Due Date" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="BOOKMARK_ALT" layoutX="700.0" layoutY="359.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXDatePicker fx:id="dateCompleted2" defaultColor="#1794B2" editable="false" layoutX="733.0" layoutY="333.0" promptText="Date Completed" />
+      <JFXCheckBox fx:id="sent2" checkedColor="#1794B2" layoutX="701.0" layoutY="426.0" prefHeight="27.0" prefWidth="274.0" text="Sent to client (Yes / No)" textFill="GREY" unCheckedColor="#1794B2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXTextArea fx:id="txtAdditionalInfo2" layoutX="735.0" layoutY="604.0" prefHeight="117.0" prefWidth="230.0" promptText="Additional Info" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="BOOKMARK_ALT" layoutX="703.0" layoutY="625.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="BOOKMARK_ALT" layoutX="36.0" layoutY="405.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXTextField fx:id="txtAgencyName" focusColor="#30b2a1" labelFloat="true" layoutX="69.0" layoutY="374.0" prefHeight="44.0" prefWidth="219.0" promptText="Agency Name" unFocusColor="#bfbfbf">
+         <font>
+            <Font name="Roboto Light" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXTextField>
+      <JFXCheckBox fx:id="bookKeeping" checkedColor="#1794B2" layoutX="36.0" layoutY="166.0" prefHeight="27.0" prefWidth="288.0" text="Book Keeping (Yes / No)" textFill="GREY" unCheckedColor="#1794B2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="payroll" checkedColor="#1794B2" layoutX="36.0" layoutY="270.0" prefHeight="27.0" prefWidth="258.0" text="Payroll (Yes / No)" textFill="GREY" unCheckedColor="#1794B2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXComboBox fx:id="cmbIntermediary" focusColor="#1794b2" layoutX="697.0" layoutY="509.0" prefHeight="31.0" prefWidth="230.0" promptText="- Choose Intermediary -" style="-fx-font-size: 17px;" unFocusColor="#1794b2" />
+      <Label layoutX="403.0" layoutY="218.0" prefHeight="21.0" prefWidth="174.0" text="Due Date" />
+      <Label layoutX="733.0" layoutY="217.0" prefHeight="21.0" prefWidth="174.0" text="Due Date" />
+      <Label layoutX="403.0" layoutY="306.0" prefHeight="21.0" prefWidth="174.0" text="Date Completed" />
+      <Label layoutX="733.0" layoutY="305.0" prefHeight="21.0" prefWidth="174.0" text="Date Completed" />
+   </children>
+</AnchorPane>

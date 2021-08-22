@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="400.0" styleClass="mainContainer" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.add_employee_controller">
+   <children>
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="USER" layoutX="62.0" layoutY="147.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+      <JFXTextField fx:id="txtFullName" focusColor="#30b2a1" labelFloat="true" layoutX="95.0" layoutY="116.0" prefHeight="44.0" prefWidth="219.0" promptText="*Full Name" unFocusColor="#bfbfbf">
+         <font>
+            <Font name="Roboto Light" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPassword" focusColor="#30b2a1" labelFloat="true" layoutX="96.0" layoutY="214.0" prefHeight="44.0" prefWidth="219.0" promptText="*Password" unFocusColor="#bfbfbf">
+         <font>
+            <Font name="Roboto Light" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXTextField>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="69.0" layoutY="410.0" onAction="#save" prefHeight="47.0" prefWidth="113.0" style="-fx-background-color: #1794B2; -fx-background-position: 15%;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="Roboto Light" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="buttonSize" />
+            <String fx:value="save-icon" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton fx:id="btnCancel" layoutX="212.0" layoutY="409.0" onAction="#cancel" prefHeight="47.0" prefWidth="317.0" style="-fx-border-color: #1794B2;" text="Cancel" textFill="#1794B2">
+         <font>
+            <Font name="Roboto Light" size="16.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="buttonSize" />
+            <String fx:value="button_exit" />
+         </styleClass>
+      </JFXButton>
+      <Label fx:id="lblError" layoutX="64.0" layoutY="316.0" prefHeight="36.0" prefWidth="295.0" styleClass="lblError" textFill="#1794B2" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="70.0" prefWidth="400.0" style="-fx-background-color: #1794B2;">
+         <children>
+            <Label alignment="CENTER" layoutY="17.0" maxWidth="1.7976931348623157E308" prefHeight="36.0" prefWidth="323.0" text="Add New Employee" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <FontAwesomeIconView fill="#bfbfbf" glyphName="LOCK" layoutX="63.0" layoutY="245.0" size="23" styleClass="icons" wrappingWidth="20.0" />
+   </children>
+</AnchorPane>

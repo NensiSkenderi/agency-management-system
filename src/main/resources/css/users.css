@@ -1,0 +1,119 @@
+
+.total_users {
+	-fx-background-color :  white;
+	-fx-border-width : 0 0 0 5;
+	-fx-border-color :#FB464A ; 
+}
+
+.glyph-icon-perdoruesit {
+	-fx-fill: white;
+    -glyph-size: 46px;
+}
+
+.delete_user {
+    -fx-graphic: url("../images/delete_user.png");
+    -fx-cursor: hand;
+    -fx-background-radius : 10;
+    -jfx-rippler-fill: white;
+}
+
+.view_data {
+    -fx-graphic: url("../images/view_data.png");
+    -fx-cursor: hand;
+    -fx-background-radius : 10;
+    -jfx-rippler-fill: white;
+}
+
+.add_to_list {
+    -fx-graphic: url("../images/add_to_list.png");
+    -fx-cursor: hand;
+    -fx-background-radius : 10;
+    -jfx-rippler-fill: white;
+}
+
+.btn {
+	-fx-cursor: hand;
+    -fx-content-display: right;
+}
+
+.glyph-icon-perdoruesit_fields {
+	-fx-fill: #E71E63;
+    -glyph-size: 30px;
+}
+
+
+.glyph-icon-add_user {
+	-fx-fill:  white;
+    -glyph-size: 20px;
+}
+
+.property-icons {
+	-fx-background-repeat : no-repeat;
+    -fx-cursor: hand;
+    -fx-content-display: right;
+    -fx-background-color :  #1794B2;
+    -fx-background-insets : -2;
+    -fx-background-position : 10%;
+}
+
+
+.add-icon {
+    -fx-background-image: url("../images/add-icon.png");
+    -fx-padding : 0 0 0 20;
+    -fx-background-repeat : no-repeat;
+}
+
+.edit-icon {
+	 -fx-background-image: url("../images/edit-icon.png");
+	 -fx-padding : 0 0 0 30;
+	 -fx-text-fill: white;
+}
+
+.excel-icon {
+    -fx-background-image: url("../images/excel-icon.png");
+    -fx-padding : 0 0 0 30;
+}
+
+.pdf-icon {
+	 -fx-background-image: url("../images/pdf-icon.png");
+	 -fx-padding : 0 0 0 20;
+}
+
+.save-icon {
+	 -fx-background-image: url("../images/save.png");
+	  -fx-background-repeat : no-repeat;
+}
+
+
+.btnDeletePlay {
+	 -fx-background-image: url("../images/submit.png");
+	 -fx-background-repeat : no-repeat;
+}
+
+.btnDownload {
+	-fx-background-image: url("../images/download.png");
+	-fx-background-repeat : no-repeat;
+	-fx-background-position : 30%;
+}
+
+.white_background{
+	-fx-background-color :  white;
+}
+
+.passw_notes_hbox {
+	-fx-border-color : grey; 
+    -fx-border-width : 2 0 0 0;
+}
+
+.hboxes {
+	-fx-background-color : white;
+}
+
+.edit-icon:disabled, .edit-icon:disabled > * {
+  -fx-opacity: 0.85 ;
+  -fx-background-color : #bfbfbf;
+}
+
+.mygridStyle Line {
+  -fx-stroke   : #1794B2;
+}
